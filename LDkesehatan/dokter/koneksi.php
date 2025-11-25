@@ -1,0 +1,11 @@
+<?php
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $db_name = "db_web_desa";
+    $conn = new mysqli($host, $username, $password, $db_name);
+
+    if (!$conn){
+        die("Koneksi Gagal:".mysql_connect_error());
+    }
+?>
